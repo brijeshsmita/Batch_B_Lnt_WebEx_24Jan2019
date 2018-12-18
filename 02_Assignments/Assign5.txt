@@ -1,0 +1,13 @@
+
+Create a class  Customer with following properties : 
+custId
+custName
+prdName(name of product he is purchasing)
+prdAmt( cost of the product)
+
+Accept above the data from user.Accept Quantity also.
+
+Call a method  calcBillAmt() from Customer class that will display the bill amount to the customer.
+
+
+

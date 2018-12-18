@@ -1,0 +1,19 @@
+Create an Interface IAccount 
+	with properity: BANKNAME
+	and method withdraw(double wAmt)
+
+Create a Class SavingAccountImpl which implements IAccount 
+with properties: 
+	 int accountId;
+ 	   String actName;
+    	double balAmt;
+    	double minBal;
+
+Create a UserInterface Application: Implement the following requirement 
+
+		IAccount cust1 = new SavingAccountImpl(101, "Vijay", 9000);
+		cust1.withdraw(5000);
+		System.out.println(cust1);
+
+
+COLLECTION , exp handling  

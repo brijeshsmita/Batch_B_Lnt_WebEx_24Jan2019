@@ -1,0 +1,18 @@
+Create a class  Account with properties: 
+
+String bankName;
+    int accId;
+    String accName;
+    double balAmt;
+
+Accept all the accId,accName, accAmt from user .Don't accept a bankName from user. 
+
+Create a SavingAccount class with propery:
+double minBal;
+inherit other properties from class Account
+
+create a SavingAccount object .
+Write a method Withdraw(double wAmt), accept a withdraw amount from user and display remaining balance to user .
+Write a method Deposit(double dAmt), accept a deposit amount from user and display new balance to user .
+Display the customer details including bank name . 
+

@@ -1,0 +1,7 @@
+1> Write a program to accept Electricity MeterNumber and last month reading, current month reading and calculate   number of units consumed. Based on following criteria
+generate an Electricity bill Amount and display.
+
+	a) <= 100 units - rate is 1 rs 
+	b) <=300 units-rate is 100+ 2 rs per unit (i.e if total units are 270 - bill will be 100 + 170 *2) 
+	c) >300 units - rate is 500+3rs per unit ( i.e if total units are 650 - bill will be 500+ 350*3 ) 
+	

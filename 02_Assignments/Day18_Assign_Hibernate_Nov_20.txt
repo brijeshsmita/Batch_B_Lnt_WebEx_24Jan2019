@@ -1,0 +1,36 @@
+1>what is ORM, JPA, Hibernate?
+2>what are hibernate generators? explain
+3>Write a Hibernate Application using XML mapping to persist Contact class Object using (generator strategy assigned)
+
+class Contact{
+	private int contactId;
+	private String firstName;
+	private String lastName;
+	private String phoneNo;
+	private String email;
+	private LocalDate dob;
+}
+
+4>Write a Hibernate Application using Annotation mapping to persist Contact class Object using (generator strategy Sequence)
+
+
+/*
+
+**********Notes for Creating a LocalDate********
+You can create a LocalDate in several ways. The first way is to obtain a LocalDate corresponding to the local date of today. Here is an example of creating a LocalDate using the now() method:
+
+LocalDate localDate = LocalDate.now();
+Another way to create a LocalDate is to create it from year, month and day information, like this:
+
+LocalDate localDate2 = LocalDate.of(2015, 12, 31);
+The LocalDate's of() method creates a LocalDate instance representing a specific day of a specific month of a specific year, but without time zone information.
+
+Accessing the Date Information of a LocalDate
+You can access the date information of a LocalDate using these methods:
+
+getYear()
+getMonth()
+getDayOfMonth()
+getDayOfWeek()
+getDayOfYear()
+*/

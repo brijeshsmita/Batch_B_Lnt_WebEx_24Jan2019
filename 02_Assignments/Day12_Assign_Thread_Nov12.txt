@@ -1,0 +1,47 @@
+1>Write a java multithreaded program to print ten greetings of “Hello, World!”, one
+greeting every second. We add a time stamp to each greeting to see when it is printed.
+(Use Thread class)
+The run method should loop 6 times through the following task actions:
+• Print a time stamp.
+• Print the greeting."Hello World"
+• Wait a second.
+
+start only one thread
+
+OUTPUT
+Fri Dec 28 23:12:03 PST 2012 Hello, World!
+Fri Dec 28 23:12:04 PST 2012 Hello, World!
+Fri Dec 28 23:12:05 PST 2012 Hello, World!
+Fri Dec 28 23:12:06 PST 2012 Hello, World!
+Fri Dec 28 23:12:07 PST 2012 Hello, World!
+Fri Dec 28 23:12:08 PST 2012 Hello, World!
+
+2> Write a multithreaded java class using Runnable  GreetingThreadRunner program, 
+start two threads: one that prints “Hello”
+and one that prints “Goodbye”. 
+The run method should loop ten times through the following task actions:
+• Print a time stamp.
+• Print the greeting.
+• Wait a second.
+
+OUTPUT
+Fri Dec 28 12:04:46 PST 2012 Hello
+Fri Dec 28 12:04:46 PST 2012 Goodbye
+Fri Dec 28 12:04:47 PST 2012 Hello
+Fri Dec 28 12:04:47 PST 2012 Goodbye
+Fri Dec 28 12:04:48 PST 2012 Hello
+Fri Dec 28 12:04:48 PST 2012 Goodbye
+Fri Dec 28 12:04:49 PST 2012 Hello
+Fri Dec 28 12:04:49 PST 2012 Goodbye
+Fri Dec 28 12:04:50 PST 2012 Hello
+Fri Dec 28 12:04:50 PST 2012 Goodbye
+Fri Dec 28 12:04:51 PST 2012 Hello
+Fri Dec 28 12:04:51 PST 2012 Goodbye
+Fri Dec 28 12:04:52 PST 2012 Goodbye
+Fri Dec 28 12:04:52 PST 2012 Hello
+Fri Dec 28 12:04:53 PST 2012 Hello
+Fri Dec 28 12:04:53 PST 2012 Goodbye
+Fri Dec 28 12:04:54 PST 2012 Hello
+Fri Dec 28 12:04:54 PST 2012 Goodbye
+Fri Dec 28 12:04:55 PST 2012 Goodbye
+Fri Dec 28 12:04:55 PST 2012 Hello

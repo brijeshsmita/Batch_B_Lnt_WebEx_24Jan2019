@@ -1,0 +1,21 @@
+1> Write a program to display following :
+
+*****Axis Bank App******
+
+Enter 1 for Balance 
+Enter 2 for Withdrawal
+Enter 3 for Deposit
+Enter 0 for EXIT
+
+**********************
+
+1> when user enter choice 1:	 It should display balance amount 
+2>when user enter choice 2:	Ask user the withdraw amount and display remaining balance
+3>when user enter choice 3:	Ask user the deposit amount to enter and display new balance 
+4>when user enter choice 3:	Exit the application
+
+User should able to continue for the next operation (Hint:Use do while loop,ask user "do you wish to continue?")
+
+
+
+

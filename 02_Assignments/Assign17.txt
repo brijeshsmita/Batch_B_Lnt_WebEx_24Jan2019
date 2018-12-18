@@ -1,0 +1,7 @@
+Answer in short: 
+
+1> What are components of JDBC API?
+2>What are types of JDBC drivers?
+3> What are the main steps in java to make JDBC connectivity?
+4>What are different types of Statement?
+5> what is connection pooling?

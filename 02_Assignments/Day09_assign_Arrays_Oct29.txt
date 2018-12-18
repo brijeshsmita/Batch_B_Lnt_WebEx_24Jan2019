@@ -1,0 +1,7 @@
+1> Write a program to accept marks for n subjects. Ask user how many subjects marks he wants to enter Using array find Average and display the Grades.
+Use following criteria for Grades.
+
+1.  marks >= 80 Grade is 'First Class'
+2. marks >=60 Grade is 'Second Class'
+3. marks >=40 Grade is 'Pass '
+4. marks <40 Grade is 'Fail' 
