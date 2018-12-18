@@ -1,0 +1,78 @@
+1> create a simple maven project
+	-provide the groupId
+	-provide the ArtifactId
+
+2> update pom.xml
+3> create database
+4> create model/pojo/bean/entity class
+5> hibernate.cfg.xml
+	-configure database properties,dialect,hibernate properties
+	-mapping class (annotation)
+	or mapping resource(xml)
+
+6> HibernateUtil 
+	-buildSessionFactory
+	-getSessionFactory
+	-closeSessionFactory
+
+7> created TestSessionFactory to test sessionFactory obtained or not
+
+8> create DAO layer
+	-Interface for Dao eg: ICustomerDao
+	
+
+9>-Implementation class for Dao Interface eg:CustomerDaoImpl
+	-prep work - get "SessionFactory" object from HibernateUtil
+	eg:
+	private SessionFactory sessionFactory;
+	
+	public CustomerDaoImpl() {
+		sessionFactory=HibernateUtil.getSessionFactory();
+	}
+10) override all unimplemented methods
+	-declare instace variable -> session,trasaction,query
+
+	public Integer addCustomer(Customer customer) {
+		//add the customer record in the db
+		session = sessionFactory.openSession();
+		//begin tx
+		trasaction=session.beginTransaction();
+		//save
+		custId= (Integer) session.save(customer);
+		return custId;
+	}
+11> Unit test for all Dao methods.
+
+12> create service layer interface eg: ICustomerService
+
+13> create service layer implementation class 
+eg: CustomerServiceImpl 
+public class CustomerServiceImpl  implements ICustomerService {
+//prep work - ref of ICustomerDao and obj of CustomerDaoImpl
+	//to achieve loose coupling we use interface reference
+	private ICustomerDao customerDao;
+	
+	public CustomerServiceImpl() {
+		customerDao= new CustomerDaoImpl();
+	}
+	
+	public Long addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return customerDao.addCustomer(customer);
+	}
+
+}
+
+13> create client code eg: CustomerClient
+eg:
+//prep-work
+	private static ICustomerService customerService;
+	private static Long custId;
+	private static Customer customer;
+	
+	//static block
+	static{
+		customerService= new CustomerServiceImpl();
+	}
+	
+

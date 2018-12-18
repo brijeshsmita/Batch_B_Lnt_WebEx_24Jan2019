@@ -1,0 +1,22 @@
+One of the recurring concern / issue faced by entire java team is to inject ojdbc6 (JDBC Driver) as maven dependency.
+I have found following solution:
+
+How to add ojdbc6.jar to your maven repository
+pre-requisites:
+              1. Apache Maven 3.x installed
+              2. JDK 1.6+ Installed
+              3. Env variables: JAVA_HOME, M2_HOME & PATH Updated/Set  
+
+
+1. Download ojdbc6.jar from oracle website
+2. Open download location with command prompt / terminal
+3. Try following command:
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.3 -Dpackaging=jar -Dfile=ojdbc6.jar -DgeneratePom=true
+
+Once successful, use following lines in your pom.xml
+<dependency>
+              <groupId>com.oracle</groupId>
+              <artifactId>ojdbc6</artifactId>
+              <version>11.2.0.3</version>
+</dependency>
+
