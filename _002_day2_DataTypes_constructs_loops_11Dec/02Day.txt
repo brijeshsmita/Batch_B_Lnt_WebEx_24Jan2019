@@ -1,0 +1,46 @@
+Good Morning guyz....
+Hope everyone has completed their assignments
+Have you done with Hands-On labs (assignment 1 word file).
+
+Day2 topics
+
+1> Data types and Strings in java
+2> constructs (if-else,is else-if,switch)
+3> loops (for,while,do while)
+4> how to create a class ( instance variables)
+
+instead of putting on mute someone has put me on hold.
+kindly be sensible .... this way i will not be able to conduct the session properly....
+
+how many primitive data types we have in java( 8 data types)
+byte - 1b, 0
+short -2b, 0
+int - 4b,  0
+long -8b(postfix the listeral with 'l' or 'L') 0
+(if the size of long literal exceed then it will give error)
+,float - 4 b(postfix the listeral with 'f' or 'F') 0.0
+(coz all decimal are by default double in java)
+double - 8b 0.0
+char - 2b , '\u0000'
+boolean 1bit (true /false 0/1) false
+
+local variables - variable within method scope .argument/parameters are also local variables
+
+rule for local variales:
+-must be initialized before use
+-camelCase
+-do not have default value
+
+numeric literals java 7 onwards can have '_' underscore which is avoided by the compiler and meant for readibility purpose
+
+bytecote ??
+compiled code (.class file) which makes java platform independent
+
+
+
+
+
+
+
+
+
