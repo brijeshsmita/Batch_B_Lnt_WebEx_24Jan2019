@@ -1,0 +1,5 @@
+Assignments Day1
+
+1> list of keywords in java.
+2> important classes in java.lang package
+3> features of java
