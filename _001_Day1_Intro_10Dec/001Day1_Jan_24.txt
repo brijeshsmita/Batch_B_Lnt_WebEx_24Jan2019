@@ -1,0 +1,86 @@
+Hello Everyone
+
+we are having 25 days of Java Training
+Request to all
+1> join the meeting before 15 minutes
+2> Complete the Assignments Daily basis and upload it(onedrive) or mail me.
+3> One drive or github link will be shared soon to you all.
+4> Just keep yourself on mute during the call.
+5> Put all your queries in the chat box during the session.
+6> i am avilable 9 am to 6 pm on call and mails
+
+7738206222 smitabrijesh@synergetics-india.com
+
+Object Oriented Programming Language
+OOP -> It treats each real world entities as an object.
+	and support 4 pillars of OOP.
+Object- It is a real world entity which has
+	-unique identity
+	-set of properties/attributes
+	-behavior
+	-responsibilty
+(tangible,intangible,Conceptual)
+(eg: Mobile,Car,Software,Bank,Order,Account)
+Class - It is a structure or a bluprint to create same type of Object
+	Object is an instance of a class.
+class Mobile{
+	int mobileId;
+	String model;
+	String color;
+	String memory;
+	String screenSize;
+//responsibity/behaviour - defining method/function
+	//method has a return type, name, aruguments/parameters,body
+	void printMobileDetails(){
+		//printing the mobile details
+	}
+}
+Abstraction -> shares only the relevant information about the object
+Encapsultion -> hiding the complexity of an Object
+Polymorphism -> Different object responding to the same method 		differently
+Inheritance -> Reusability of code, Extending the proproperty of parent class to the child class
+
+			Langugage
+	1>Dictionary    2> words               3>sentance(grammer)
+
+
+
+			Programming Lnguage
+
+	1>packages      2>keywords                3>syntax
+collection of related    reserved words which       way to write the 
+classes                  has predefined meaning      code
+or interface
+
+1> First statement of a '.java' must be a package declaration
+	(we can have one or none package declaration)
+-package keyword to declare a package
+-package is used to organize related class and interface in a folder/directory
+-package name must be in all lower case seperated by _ underscore.
+-package name must be reverse of domain name
+	eg: employee project in lnt.com
+	com.lnt.employee_project
+	com.lnt.java_basic
+Java default package is java.lang package
+
+2> class keyword is used to declare a class in java
+-a .java file can have many classes
+-but can have only one public class
+-and the public class name and the .java file name must be same
+-we can run only that class which contains main() method
+-class name must be in PascalCase(each word first letter must be in caps)
+	eg: MobileShop, BankAccount, CustomerOrder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
