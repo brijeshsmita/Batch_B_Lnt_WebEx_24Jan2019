@@ -1,0 +1,33 @@
+30th Jan 2019 -> Day 5 ...topics
+
+Exception Handling in java
+	- what and why exception handling
+	- Exception hierarchy
+	- types of Exceptions
+	- checked and unchecked Exception (compile-time &Runtime)
+	- how to handle exception
+		1> try-catch
+		2> throws 
+	- create your own custom Exception
+	- throw and throws keyword
+	- new features of exception java 7 onwards
+
+**convertion of various data types
+--------------------------------------------------------------
+Any abnormility which terminates the program abruptly is known as Exception. Exception can be handled by java using
+	1> try catch block
+	2> throws keyword
+
+such type of event which cannot be handled 
+i.e system failure, Network failure,Database crashed.
+are known as Error.
+
+
+
+
+
+
+
+
+
+

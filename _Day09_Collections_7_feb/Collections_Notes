@@ -1,0 +1,46 @@
+
+Collection Framework -> used to store heterogeneous Object.(different types of Object)
+different in-build method to perform various operation on it.
+it can re-size
+it deals with Objects
+
+List(I) collection are ordered collection
+		1> ArrayList
+		2> LinkedList
+		3> Vector (Legacy class , before java 5)
+		
+Set(I) collection are unique collection 
+		1> HashSet(un-ordered)
+		2> LinkedHashSet(insertion order)
+		SortedSet(I)
+			3> TreeSet	(Ordered set)
+			
+Map are Key:Value collection
+		1> HashMap(un-ordered)
+		2> LinkedHashMap(insertion order)
+		3> HashMap (Legacy class , before java 5)
+		SortedMap(I)
+			4> TreeMap	(Ordered Map)
+			
+//Iterator interface is use to iterate over the collection ... visit each element of the collection
+//iterator are forward only
+		Iterator iter= list.iterator();
+		while(iter.hasNext())//hasNext method checks weather list has the next object or not
+		{//if list has the next object the next method will take the cursor to the next object in the list
+			System.out.println(iter.next());
+		}
+		
+		//sort method has a contract with Comparable/Comparator Interface
+		//means sort method can sort only those object which has implemented either of the Comparable/Comparator Interface
+		
+//ArrayList implements List -//LinkedList implements List and Queue
+//ArrayList is fast for getting the Object -//LinkedList is fast for Adding & removing the Object
+
+both are un-synchronized (not thread safe),insertion order, allows duplicates
+
+//Vector are legacy class which (before java 5) are synchronized(thread safe)
+
+which scenario i should go for linkedList and in which scenario i should go for arrayList
+
+frequent access- arrayList
+frequent insertion/removal- linkedList

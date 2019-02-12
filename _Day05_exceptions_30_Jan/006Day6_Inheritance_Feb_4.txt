@@ -1,0 +1,21 @@
+Day 6 topics ----> 4th Feb
+
+Object class method
+	1>-equals()
+	2>-toString()
+	-hashCode()
+	-finalize()
+	-clone()
+	-getClass().getName()- returns fully qualified name of the class -> packageName.className eg: com.lnt.day6.emp.Employee
+	-wait()
+	-notify()
+	-notifyAll()
+	
+Inheritance in java - java does not support multiple inheritance
+	-has a relationship
+	-is a relationship (extends keyword)
+
+Rules for inheritance
+1> a class can extends a class
+2> a class can implements multiple interfaces
+3> an interface can extends multiple interfaces

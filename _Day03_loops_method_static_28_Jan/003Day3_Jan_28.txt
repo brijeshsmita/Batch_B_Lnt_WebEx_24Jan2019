@@ -1,0 +1,9 @@
+Day 3 topics
+
+loops
+	-for
+	-while
+	-do while
+Methods and return types in details
+static,non-static variables, variable types in java
+Access Modifiers

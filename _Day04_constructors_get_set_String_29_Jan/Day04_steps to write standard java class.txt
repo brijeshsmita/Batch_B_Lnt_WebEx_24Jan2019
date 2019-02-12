@@ -1,0 +1,11 @@
+steps to write standard java class
+//step 1: package declaration
+//step 2: import statement(if any)
+//step 3: public class
+//step 4: //instance variable
+//step 5: //static variable (if any)
+//step 6: //static block (if any)
+//step 7: //init block
+//step 8: //Constructors(No-Arg,Parameterized)
+//step 9: //business methods (if any)
+//step 10:Generate getters and setters

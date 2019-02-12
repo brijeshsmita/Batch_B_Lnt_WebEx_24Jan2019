@@ -1,0 +1,2 @@
+1> Difference between an interface and an abstract 
+2> 

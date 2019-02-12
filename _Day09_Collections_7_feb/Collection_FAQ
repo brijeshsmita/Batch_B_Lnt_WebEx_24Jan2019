@@ -1,0 +1,9 @@
+1>which scenario i should go for linkedList and in which scenario i should go for arrayList
+(Real time scenarios)
+frequent access- arrayList
+frequent insertion/removal- linkedList
+
+2>Difference between ArrayList and LinkedList and Vector
+3>Difference between HashSet and LinkedHashSet and TreeSet
+4>Difference between Comparable and Comparator
+5> how to sort TreeSet with Comparable

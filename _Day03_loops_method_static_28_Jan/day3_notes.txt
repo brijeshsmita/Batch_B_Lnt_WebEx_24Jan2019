@@ -1,0 +1,23 @@
+Good Morning All
+
+Topic Covered till Now...
+1> Java & Eclipse Introduction and Installation.
+2> data types,Variables,Constructs,loops,operators
+
+Todays topic
+
+-Methods in java
+-static and non-static methods and variable
+-access modiefiers 
+	-public
+	-protected
+	-private
+-and access levels
+	-public 
+	-protected
+	-private
+	-default also known as package level
+- method overlaoding
+- constructor
+-constructor overlaoding
+- getters and setters
