@@ -1,0 +1,34 @@
+1>Write a class Mobile with  following properties and methods
+private int mobileId;
+private String mobileName;
+private String mobileCoName;
+private String mobilePrice;
+private Date manfDate;
+
+-> no_arg and Overloaded constructor
+-> protected void print(){ //print the mobile details}
+-> generate getters and setters
+-> Override toString() method
+
+2> Now create a class SmartPhone which extends Mobile with following details
+
+private String extraFeature;
+
+-> no_arg 
+-> Overloaded constructor (and call super class overloaded constructor)
+-> Override print(){ //print the SmartPhone details and call super class print}
+-> generate getters and setters
+-> Override toString() method and call super class toString
+
+3> Now write a class to TestReflection with main method
+Get Class Object
+Get Super Class
+Get Public Member Classes
+Get Declared Classes
+Get Declaring Class
+Getting Package Name
+Getting Class Modifiers
+Get All Public Methods
+Get All Public Constructors
+Get All Public Fields
+
