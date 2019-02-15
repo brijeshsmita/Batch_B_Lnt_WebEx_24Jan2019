@@ -1,0 +1,17 @@
+1>Write a  programme  to write "Welcome to Java Streams" on Word File 'MyData' in your C:\\MyJavaFiles folder .
+
+2> Write a programme to read above file . Print the content of file on console of your Eclipse IDE.
+
+3>Create a csv file  of 5 employees records : 
+employee's name, employee's salary, employee's age and employees's address;
+	csv file data format (comma seperated)for  eg: Rupali,40000,30,Mumbai
+
+4>Read the same file and display these 5 records on eclipse ide console.
+	Display Data format ( | seperated) for eg :Rupali | 40000 |30 | Mumbai
+
+	
+
+
+
+
+
