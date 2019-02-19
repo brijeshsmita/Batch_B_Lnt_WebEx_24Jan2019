@@ -1,0 +1,16 @@
+serialization Assignment: 
+
+create a customer object with following properties :
+
+custId, custName,passwordCode;
+
+accept data from user. 
+
+Send an object to file D:\\MyData.
+
+Read and Display object data on eclipse ide console.
+
+
+
+
+
