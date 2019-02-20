@@ -1,0 +1,17 @@
+1> Database -> CREATE TABLE EMP123(EID NUMBER PRIMARY KEY, ENAME VARCHAR2(30),ESAL NUMBER);
+create sequence emp123_seq start with 1;
+2> add driver to the project classpath -> copy paste the ojdbc6.jar file into lib folder created in your project
+	right click on the jar file and build path -> Add to build path 
+3> obtain connection
+4> talk to database (SQL -structured query language)
+	C -CREATE/ADD/INSERT -> INSERT INTO EMP123 values(emp123_seq.nextval,'SMita',9999.99);INSERT INTO EMP123 values(emp123_seq.nextval,'Sia',5599.99);INSERT INTO EMP123 values(emp123_seq.nextval,'Ria',7899.99);
+	commit; /*DML operations need to committed*/
+	R -READ/RETREIVE -> SELECT * FROM EMP123;
+	U -UPDATE/MODIFY ->  UPDATE EMP123 SET ename='smita kumar' where eid=1;
+	D -DELETE/REMOVE -> DELETE FROM EMP123 where eid=1;
+	S -SEARCH/FIND  -> SELECT * FROM EMP123 where eid=1;
+5> By obtaining Statement/PreparedStatement/CallableStatement object -(to fire Sql queries)
+	Statement-> to fire simple SQL Queries
+	PreparedStatement-> to fire pre-compiled SQL Queries (provides better performance ,thus must be used instead of Statement)
+	CallableStatement-> to fire execute Stored Procedures
+6> ResultSet -> stores the data(rows) fetch by the above statement execution.
