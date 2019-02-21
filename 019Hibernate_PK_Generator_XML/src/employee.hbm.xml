@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- mapping class with table  And properties with the column-->
+	<class name="com.lnt.day18_hibernate.employee.model.Employee"
+		table="lnt_employee">
+		<!-- primary key is mapped by id tag -->
+		<id name="empId" column="emp_Id">
+			<!-- <generator class="assigned"></generator> --><!-- assigned means programmer will be  assigning the primary key value not the db/hibernate-->
+			<!-- <generator class="increment"></generator> -->
+			<generator class="sequence">
+			    <param name="sequence">seq_lnt_Employee</param>
+			</generator>
+			<!-- <generator class="hilo">
+			    <param name="table">mytable</param>
+			    <param name="column">col1</param>
+			    <param name="max_lo">10</param>
+			</generator> -->
+			<!-- table - hibernate_unique_key
+			column :next_hi
+			max_lo:32767
+			
+			formula used for hilo generator
+			max_lo * next_hi +next_hi
+			
+			By taking the guven parameter ,hilo will create a table, with one
+			column and calculate the column value ased o nthe hilo fomula
+			 -->
+			
+		</id>
+		
+		<!-- mapping property -->
+		<property name="firstName" column="first_Name"></property>
+		<property name="lastName" column="last_Name"></property>
+		<property name="phoneNo"  column="phone_No"></property>
+		<property name="email"  column="email"></property>
+		<property name="doj"  column="doj" type="date"></property>		
+	</class>
+</hibernate-mapping>
+<!-- employee.hbm.xml -->
+
+
+<!-- if column names are different than properties of class specify them 
+	refer image in CV folder <id name="custId"> <column name="cust_Id"/> <generator 
+	class="assigned"></generator> </id> <property name="custName" > <column name="cust_Name"/></property> 
+	<property name="email"><column name="emails"/> </property> <property name="phone"><column 
+	name="phone_nos"/> </property> </class> -->
