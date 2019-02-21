@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- src/hibernate.cfg.xml -->
+<!-- hibernate configuration -->
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database configuration -->
+		<!-- Database connection object -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:orahome</property>
+		<property name="connection.username">system</property>
+		<property name="connection.password">system</property>
+
+		<!-- Pool Of Connection -->
+		<!-- Database connection pool (use the built-in) -->
+		<property name="connection.pool_size">5</property>
+
+		<!-- we will not write SQL-so need to configure Database specific hibernate 
+			dialect -->
+		<!-- SQL dialect , db specific commands are prepared by hb , developer 
+			need not bother SQL syntax -->
+		<!-- dialect translate all hibernate query to DB specfic Queries -->
+		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<!-- internally hibernate generate Queries to perform DB operation -->
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- if i want hibernate to create table for us everytime -->
+		<property name="hbm2ddl.auto">update</property>
+		<!-- if i want hibernate to create table for us if not exists and update 
+			if exists instead of create provide update -->
+		<!-- create - every time existing table will be dropped and will create 
+			a new -->
+		<!-- update - existing table will be updated and if not exists then will 
+			create a new table -->
+		<!--Automatically create update validate -->
+
+		<!-- for XML mapping of the java Object class -->
+		<mapping resource="employee.hbm.xml" /> 	<!-- xml hibernate mapping file -->
+		<!-- for Annotation based mapping of the java Object class -->
+		<!-- <mapping class="com.lnt.day18.hibernate.emp.model.Employee"/> --><!-- annotation mapping -->
+	</session-factory>
+</hibernate-configuration>     

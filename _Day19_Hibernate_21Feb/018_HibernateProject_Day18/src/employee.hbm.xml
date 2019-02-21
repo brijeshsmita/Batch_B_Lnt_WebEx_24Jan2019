@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- src/employee.hbm.xml -->
+<hibernate-mapping>
+	<!-- mapping the class with the table And the properties with the column -->
+	<!-- here we will map EMployee class with emp123_hb -->
+	<class name="com.lnt.day18.hibernate.emp.model.Employee"
+		table="emp123_hb">
+		<!-- now lets map the Primary key property -->
+		<!-- id tag if used to map primary key column -->
+		<id name="empId" column="emp_Id">
+			<generator class="assigned"></generator>
+			<!-- assigned means programmer will be assigning the primary key value 
+				not the db/hibernate -->
+		</id>
+		<!-- mapping property -->
+		<property name="empName" column="emp_Name" ></property>
+		<property name="empSal" column="emp_Sal"></property>
+	</class>
+</hibernate-mapping>

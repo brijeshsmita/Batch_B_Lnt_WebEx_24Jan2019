@@ -1,0 +1,62 @@
+
+create core java project 
+
+1> LTI_Hibernate_Demo1_BasicEx
+
+model - Customer class 
+
+2>Database - create table mycustomer ( as per script with matching fields and datatypes)
+
+3> Add lib folder - build path ( add external jars -hibernate 4 jars)
+
+4> Table Name specifications : 
+
+****annotate the class with ****imp**** javax.persistence.@Entity annotation (JPA annotation)
+annotate table name @Table(name="customerANTN")-your db table name 
+
+
+need to create a table ? 
+hibernate.hbm2ddl.auto setting should be defining that the database is created
+update 
+
+so no need to create table 
+
+5> create sequnce in db 
+
+create sequence hb_cust_seq increment by 1 start with 100
+// with SQL server its Identity
+
+7> mark primary key attribute with @Id and @GeneratedValue
+	@Id //primary key attribute must be marks with @Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="CUST_GEN")
+	@SequenceGenerator(name="CUST_GEN",sequenceName="cust_seq_ANTN",allocationSize=1)
+	@Column(name="custId")
+	private Long custId;
+	
+	
+	
+8> mark other property with @Column (name="custName")
+etc 
+
+
+
+follow usual steps :
+
+//no Arg constructor
+//Overloaded constructor
+//getters and setters
+	//toString method
+		//implement serializable to class
+	//and rt click generate serial version id
+	
+10>src ->  hibernate.cfg.xml file 	
+	
+9> No need of customer.hbm.xml file 
+
+<!--  annotation mapping	 -->
+	<mapping class="com.lnt.customer.model.Customer"/> 
+	
+	
+	10> run the main application 
+	
+	

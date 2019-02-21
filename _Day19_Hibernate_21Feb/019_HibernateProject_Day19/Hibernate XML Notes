@@ -1,0 +1,81 @@
+Problems with JDBC:
+	In JDBC we have to write lot many boilerplate (repetative) code.
+	we have to have knowledge of SQL
+	we need to set each property of an object to each respective column of Table
+	we need to create tables
+	we have to take care of transactions 
+
+Framework is a semi-complete resusable component which is used to focus on the primary concern. 
+and the secondary concern will be taken care by the framework.
+
+
+-Hibernate is Opensource framework
+-Hibernate is ORM(Object Relational Mapping)(map the Object to the table directly) tool to persist the java Object 
+-implements (JPA-Java Persistence API)(set of interfaces)
+-many other ORM framework which implements JPA->iBatis,EclipseLink,TopLink etc....
+
+XML-eXtensible Markup Language- it is a standard/specification to describe data in heterogeneous(different type) application
+used for configuration for various framework.
+
+create a java project
+create a lib folder-paste all the relate jar file in this lib folder
+keep the hibernate jar files into the classpath ->select all the jar file ->rt click->
+	build Path -> Add to build path
+
+1> Java Class (Employee/Customer)
+2> hibernate.cfg.xml - Configuration file in src folder
+3> either XML mapping or Annotation for mapping class to table
+xml mapping - eg: emp.hbm.xml
+annotation - @ Entity @Table @ Id @ Column  etc...
+4> Hibernate SessionFactory - object will create a sessionFactory to obtain session
+5> Hibernate Session - will create hibernate session to execute HQL
+6> Hibernate Query - will create hibernate Query object to execute query
+7> Criteria - condition or restriction
+8> Transaction - manage hibernate transaction
+
+ORM theory
+
+Two ways to create hibernate mapping 
+
+Way 1> using a)hibernate.cfg.xml b) customer.hbm.xml 
+Way 2> Using Annotations (refer 018Hibernate_Basic02_Annotations)
+
+
+
+Way 1> 
+
+create core java project 
+
+1> 018Hibernate_Basic01_Xml
+
+model - Customer class 
+
+2>Database - create table mycustomer ( as per script with matching fields and datatypes)
+
+3> Add lib folder - build path ( add external jars -hibernate 4 jars)
+
+4> You need to write two files  under src folder ->
+	a)hibernate.cfg.xml 
+	b) customer.hbm.xml 
+
+a> hibernate.cfg.xml - all connection settings ( dialects , driver , username, password)
+
+plus -> <mapping resource="customer.hbm.xml"/> 	to file below 
+
+b>customer.hbm.xml 
+
+<class name="com.lnt.day18_hibernate.customer.model.Customer" table="mycustomer">
+
+table name - class
+primary key  - id
+other properties  - column
+
+
+if column names are different than field names , u need to mention 
+
+<id name="custId">
+		<column name="cust_Id"/>
+		<generator class="assigned"></generator>
+</id>
+		
+<property name="custName" >	<column name="cust_Name"/></property>
