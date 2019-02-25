@@ -1,0 +1,47 @@
+1> What is ACID properties of transactions Explain?
+
+2> What are two levels of Hibernate Cache Explain?
+
+3> create class Customer{
+	private int customerId;
+	private String firstName;
+	private String lastName;
+	private String phoneNo;
+	private String email;
+	private LocalDate dob;
+	private Policy policy;
+}
+ create class Policy {
+	private int policyId;
+	private String policyName;
+	private double premiumAmount;
+}
+
+->) write the above classes with 2 scenarios
+a> one to many (one customer having many policies)
+create 2 Customer object and each 2 Policy. Save and fetch the Customer and Policy in OTMCustomerPolicyMain class.
+
+b> one to one (one customer having one policy)
+create 1 Customer object and each 1 Policy. Save and fetch the Customer and Policy in OTOCustomerPolicyMain class.
+
+
+3> create class Store{
+	private int storeId;
+	private String storeName;
+@ManyToMany
+    @JoinTable(name = “store_product”,
+           joinColumns = { @JoinColumn(name = “fk_store”) },
+           inverseJoinColumns = { @JoinColumn(name = “fk_product”) })
+    private Set<Product> products = new HashSet<Product>();
+}
+ create class Product {
+	private int productId;
+	private String productName;
+	private double productAmount;
+	@ManyToMany(mappedBy=”products”)
+    	private Set<Store> stores = new HashSet<Store>();
+}
+
+a) write the above classes using many to many (many Store having many Product ) Refer Demo created during session for Many to Many relations ship.
+b) create 2 stores object and each stores have 2 products.
+persist and fetch the stores and product in MTMStoresProductMain class.
