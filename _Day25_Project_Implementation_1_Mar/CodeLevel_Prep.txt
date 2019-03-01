@@ -1,0 +1,16 @@
+2 sets 
+
+Q 1> 10 marks (easy)
+	a. If else loops arrays
+	b. Collection
+	c.oops  
+	
+Q2> 10 marks ( medium)
+
+	a.Multithreading / file handling /Serialization
+	b.oops 
+
+Q 3> 10 marks ( difficult )
+	a.File handling 
+	b.serialization
+ 	c. oops / small case study using collections 

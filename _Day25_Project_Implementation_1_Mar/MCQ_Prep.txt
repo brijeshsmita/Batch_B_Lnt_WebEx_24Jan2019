@@ -1,0 +1,109 @@
+40 que - Java 10 on selenium
+
+DataTypes- prim non prim ( 3- 5)
+type casting 
+Strings - equals and == diff - code output 
+String Buffer String builder diff , String pool 
+Wrapper classes 
+constructs - if else loops - code level - what's output 
+
+oops  (7-10)
+this , super , final , static
+inheritance - super , base class constructor code 
+overloading overriding 
+diff bet abstract class and interface 2 que  
+dynamic polymorphism - super class reference to child class object
+access specifiers - public private protected
+
+see packages . like Scanner from util package etc 
+
+collections - (3- 5)
+types and uses , when to use which ? Maps 
+methods 
+iterator 
+how to sort ? 
+comparable and comparator - methods 
+
+file handling (3-5)
+types of stream and why? hierarchy 
+methods
+
+multithreading (3-5)
+two ways to create thread 
+all methods -wait, join 
+synchronization 
+
+jdbc - (3-5 )
+drivers
+How to connect ? steps with API 
+types of statements - statement , preparedstmt , callable 
+result set 
+
+Hibernate (8-10 )
+API 
+save and persist diff
+JPA hibernate diff  ** packages used for both of them 
+get and load diff 
+.xml files and properties  (javaTpoint.com)
+annotations 
+mappings - only name of mappings
+caching , transactions 
+starting steps to create sessions 
+
+maven - 1 or 2 - def 
+pom.xml life cycle 
+commands
+
+reflection - 1 or 2
+
+https://www.javatpoint.com/core-java-quiz
+https://www.sanfoundry.com/java-questions-answers-freshers-experienced/
+https://www.examveda.com/mcq-question-on-java-program/
+https://www.tutorialspoint.com/java/java_online_quiz.htm
+https://www.careerride.com/mcq/core-java-java-mcq-questions-and-answers-99.aspx
+https://data-flair.training/blogs/java-multiple-choice-questions/
+http://www.siteforinfotech.com/p/java-mcq-sets.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
